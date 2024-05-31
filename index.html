@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Guess the Correct Number</h1>
+    <p>
+      I am thinking of a number between 1 to 100.<br />Can you guess it in 3
+      turns or less?<br />I will tell you if you are too high or too low.
+    </p>
+    <div class="user-dialogue">
+      <span>Enter guess:</span>
+      <input type="number" id="user-input" placeholder="Enter guess" />
+    </div>
+    <button type="button" id="check-guess">Check Guess</button>
+    <div id="error-message"></div> <!-- Error message container -->
+    <h3 id="dsp-msg"></h3>
+    <h3 id="attempt-left"></h3>
+    <h3 id="hint-disp"></h3>
+    <button type="button" id="new-game">New Game</button>
+    <button type="button" id="get-hint">Get Hint</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
